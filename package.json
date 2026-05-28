@@ -2,10 +2,11 @@
   "name": "clouserapi",
   "version": "1.0.0",
   "description": "",
-  "main": "server.ts",
+  "main": "dist/server.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/server.ts",
-    "start": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
     "seed": "ts-node src/scripts/seed.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
